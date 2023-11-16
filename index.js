@@ -166,7 +166,27 @@ const sortedGames =  GAMES_JSON.sort( (item1, item2) => {
 });
 
 // use destructuring and the spread operator to grab the first and second games
+const [firstGame, secondGame, ...otherGames] = sortedGames;
 
 // create a new element to hold the name of the top pledge game, then append it to the correct element
+const firstGameElement = document.createElement('p');
+firstGameElement.textContent = `Top Pledge Game: ${firstGame.name}`;
+firstGameContainer.appendChild(firstGameElement);
 
 // do the same for the runner up item
+const secondGameElement = document.createElement("p");
+secondGameElement.textContent = `Runner-up Game: ${secondGame.name}`;
+secondGameContainer.appendChild(secondGameElement);
+
+// Add this code to your existing JavaScript or create a new script
+
+// Add smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});

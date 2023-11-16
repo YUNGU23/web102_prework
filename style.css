@@ -11,12 +11,14 @@ body {
 
 .header {
     display: flex;
+    justify-content: center;
     background-color: lightblue;
     padding: 1%;
     align-items: center;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    font-size: 20px;
 }
 
 .stats-container {
@@ -80,4 +82,37 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333; 
+    padding: 20px;
+    text-align: center;
+    margin: -10px -10px -10px; 
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    display: inline;
+    margin: 0 10px; 
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s; 
+}
+
+#navbar a:hover {
+    color: rgb(34, 190, 211);  
 }
