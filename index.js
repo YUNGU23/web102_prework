@@ -152,6 +152,7 @@ A total of $${totalPledged.toLocaleString()} has been raised for ${totalGames} g
 const messageElement = document.createElement('p');
 messageElement.textContent = displayMessages;
 descriptionContainer.appendChild(messageElement);
+ 
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
